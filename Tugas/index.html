@@ -1,0 +1,120 @@
+<!DOCTYPE html><html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Gallery</title>
+        <link rel="stylesheet" href="style/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    </head>
+    
+    <body>
+        <header class="navbar-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="dicoding-header-logo">
+            </div>
+            <nav class="navbar">
+                <ul class="nav-list">
+                  <li><a href="#home">Home</a></li>
+                  <li class="dropdown">
+                    <a href="#gallery" class="dropdown-btn">Gallery</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#photo">Photo</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+        </header>
+        <main>
+            <div id="home" class="jumbotron">
+                <div class="jumbotron-text">
+                    <h1>My Personal Blog</h1>
+                </div>
+            </div>
+            <div class="content_container">
+            <div id="content">
+                <article id="about" class="card">
+                    <h2>Hi</h2>
+                    <p>
+                        Perkenalkan nama ku Dani Rahman Hakim, umur 24 tahun, telah lulus sebagai sarjana komputer
+                        dari perguruan tinggi Universitas Dian Nuswantoro pada tahun 2022. Hobiku adalah menonton anime, bermain game FPS, fotografi, Meng-edit video/foto, dan mendengarkan lagu.
+                        Ini adalah Gallery yang aku buat untuk memperlihatkan hasil hasil tangkapan foto yang aku ambil juga sekaligus sebagai portofolio ku sebagai web developer
+                    </p>
+                </article>
+                    <div id="photo" class="slider-container">
+                        <button class="prev-btn">&lt;</button>
+                        <div class="slider">
+                          <div class="slide"><img src="assets/foto1.jpg" alt="Photo 1"></div>
+                          <div class="slide"><img src="assets/foto2.jpg" alt="Photo 2"></div>
+                          <div class="slide"><img src="assets/foto3.jpg" alt="Photo 3"></div>
+                          <div class="slide"><img src="assets/foto4.jpg" alt="Photo 4"></div>
+                        </div>
+                        <button class="next-btn">&gt;</button>
+                    </div>
+                    <article class="card">
+                        <h2>SUSHI</h2>
+                        <img src="assets/foto1.jpg" alt="sushi" class="featured-image" />
+                        <p>
+                            Foto pertama ini aku ambil saat tanggal 31 Januari 2024. Yup sushi nyom nyom.
+                            Jadi waktu itu aku bareng 4 orang temen ku pingin main bareng nih karena berhubung tidak pernah ketemuan juga fufufu ketemunya didunia online mulu.               
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h2>UMI DA~</h2>
+                        <img src="assets/foto2.jpg" alt="pantai" class="featured-image" />
+                        <p>
+                            Wah gak terasa banget ya udah mau ganti tahun, perasaan baru kemarin aku kesini.
+                            Ini adalah pantai Sanur di Bali, yup aku kesana waktu libur idul fitri. "kok jauh amat?"
+                            ya nenek sebenarnya di lombok jadi kalau mau ke lombok kan harus lewat bali dulu nih hehehe tau lah halan halan dulu skuy.                
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h2>Sunset</h2>
+                        <img src="assets/foto3.jpg" alt="pantai2" class="featured-image" />
+                        <p>
+                            Pantai lagi muehehe ya gimana aku suka main air. tapi kali ini beda nih pantainya. Ada yang bisa nebak? "semarang" HAH? MANA ADA?
+                            Hadeuh~ yang bener di Jepara. Tempat nya enak lo pasir nya halus masih bersih tidak ada sampah dan untuk ombak nya tidak terlalu keras jadi buat anak anak cocok nih!
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h2>Nyom Nyom</h2>
+                        <img src="assets/foto4.jpg" alt="churros" class="featured-image" />
+                        <p>
+                            Dibuka dengan makanan , ditutup dengan makanan. Apalagi makanan nya makanan penutup alias dessert hmmm~
+                        </p>
+                    </article>
+            </div>
+                <aside>
+                    <article class="profile card">
+                        <header>
+                            
+                            <figure>
+                                <img src="assets/profil_img.jpg" />
+                            </figure>
+                            <h3>Dani Rahman Hakim</h3>
+                            <p>
+                                Photographer and Future Web Developer
+                            </p>
+                        </header>
+                    </article>
+                </aside>
+            </div>
+        </main>
+        <footer>
+            <article id="contact">
+                <ul class="social_media">
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </article>
+            <p>Belajar Dasar Pemrograman Web &#169; 2019, Dicoding Academy</p>
+        </footer>
+        <script src="script/scripts.js"></script>
+    </body>
+</html>
